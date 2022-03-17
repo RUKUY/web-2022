@@ -2,11 +2,11 @@ const sliderMain = document.querySelector('.slider__main');
 const sliderImages = document.querySelectorAll('.slider__main img'); 
 console.log(sliderImages)
 
-const size = sliderImages[0].clientWidth;
+const size = document.documentElement.clientWidth;
 let swipeCounter = 1;
+console.log(size)
 
 sliderMain.style.transform = 'translateX(' + (-size * swipeCounter) + 'px)';
-console.log(size)
 
 
 const btnPrev = document.querySelector('#prev-button');
@@ -45,3 +45,4 @@ sliderMain.addEventListener('transitionend', () => {
         sliderMain.style.transform = 'translateX(' + (-size * swipeCounter) + 'px)';   
     }
 });
+
