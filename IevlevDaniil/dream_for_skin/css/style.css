@@ -983,8 +983,10 @@ a {
     margin: 15px 0px 0px 0px;
 }
 
-
-
+.zero__style {
+    border: none;
+    background-color: #fff;
+}
 
 
 
