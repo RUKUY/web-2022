@@ -16,3 +16,21 @@ headerNarrowInput.addEventListener('focus', () => {
         });
     }
 });
+
+
+const accountBtn = document.querySelector('#account-button');
+const accountNarrowMenu = document.querySelector('.narrow__account__container');
+
+let displayFlag = false;
+
+accountBtn.addEventListener('click', () => {
+    if (displayFlag == false){
+        accountNarrowMenu.style.display = "flex";
+        displayFlag = true;
+    }
+    else {
+        accountNarrowMenu.style.display = "none";
+        displayFlag = false;
+    }
+});
+
